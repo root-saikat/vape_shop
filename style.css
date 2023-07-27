@@ -6,6 +6,49 @@ body a:hover {
     color: #ba9d4d;
     text-decoration: none;
 }
+/* fonts */
+@font-face {
+    font-family: "gotham-book";
+    src: url("./fonts/gotham-book-webfont.woff2")
+}
+
+@font-face {
+    font-family: gothambold;
+    src: url("./fonts/Gotham-Bold.eot");
+}
+
+@font-face {
+    font-family: gothammedium;
+    src: url("./fonts/GOTHAMMEDIUM.eot");
+}
+
+@font-face {
+    font-family: gothamlight;
+    src: url("./fonts/GOTHAMLIGHT.eot");
+}
+
+/* @font-face {
+    font-family: rockb;
+    src: url(../fonts/ROCKB.eot);
+}
+
+@font-face {
+    font-family: rock;
+    src: url(../fonts/ROCK.eot);
+}
+
+@font-face {
+    font-family: trajanproregular;
+    src: url(../fonts/TrajanProRegular.eot);
+} */
+
+@font-face {
+    font-family: gothambook;
+    src: url("./fonts/Gotham-Book.eot");
+}
+
+
+
 /* scrollbar  */
 * {
     scrollbar-width: thin;
