@@ -1127,6 +1127,11 @@ img.card-img-top {
     box-shadow: none;
     color: #ba9d4d;
 }
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
 
 .card{
     position: relative;
@@ -1159,10 +1164,18 @@ img.card-img-top {
 }
 
 
+.vape-guide-acordian .accordion-button::after{
+    display: block;
+}
 
 
-
-
+/* customar-service page css*/
+.btn-primary{
+    background: #ba9d4d;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+}
 
 
 
@@ -1193,5 +1206,9 @@ img.card-img-top {
         line-height: normal;
         white-space: nowrap;
         font-size: 12px;
+    }
+    .advntges{
+        display: flex;
+        flex-direction: column;
     }
 }
