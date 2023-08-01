@@ -2,6 +2,11 @@
 body{
     overflow-x: hidden;
 }
+
+body a{
+    text-decoration: none;
+}
+
 body a:hover {
     color: #ba9d4d;
     text-decoration: none;
@@ -99,7 +104,7 @@ body a:hover {
 
 .header-nav-links li a img{
     margin-top:-60px ;
-    margin-left: 50px;
+    margin-left: 63px;
 }
 
 .customhead-header-container{
@@ -167,7 +172,7 @@ body a:hover {
 .fa-sort-desc::before, .fa-sort-down::before {
     content: "\f0dd";
     position: absolute;
-    top: 50%;
+    top: 19%;
 }
 
 
@@ -910,13 +915,16 @@ footer{
 
 footer h3{
     font-family: gothammedium;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 16px;
+}
+footer p{
+    font-size: 13px;
 }
 
 footer li{
     list-style: none;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 16px;
     margin: 8px 0;
     font-family: gothammedium;
@@ -976,6 +984,9 @@ footer .img-sec-3 img{
     padding: 0 10px;
 }
 
+footer ul li a{
+    text-decoration: none;
+}
 /* .slider-container{
     position: relative;
 }
@@ -1009,4 +1020,175 @@ footer .img-sec-3 img{
 
 .review-left p{
     margin-bottom: 0;
+}
+
+/* hover menu on nav */
+.hover-able, .hover-able2{
+    position: relative;
+}
+.hover-able:hover .hover-products{
+    display: flex;
+}
+.hover-able2:hover .hover-brands{
+    display: flex;
+}
+
+.hover-products, .hover-brands{
+    background: #FBFBFB;
+    width: 300px;
+    color: #000;
+    z-index: 5555;
+    position: absolute;
+    left: -100px;
+    /* bottom: 20px; */
+    display: none;
+}
+.hover-brands ul{
+    margin-top: 0;
+}
+.hover-products a, .hover-brands a{
+    color: #000;
+}
+
+.hover-products h3, .hover-brands h3{
+    font-size: 13px;
+    white-space: nowrap;
+}
+.hover-products li a{
+    color: #a3a3a3;
+}
+.hover-brands li a {
+    color: #666;
+}
+.hover-brands li a:hover{
+    color: #ba9d4d;
+    text-decoration: underline;
+}
+.hover-products li a:hover{
+    text-decoration: underline;
+}
+.hover-products ul{
+    padding-left: 0;
+}
+
+
+/* products page css */
+.accordion-item h3{
+    padding-left: 0;
+    padding-bottom: 0px;
+}
+.accordion-button::after{
+    display: none;
+}
+.products-all .card{
+    text-align: center;
+}
+.products-all .card p{
+    font-size: 12px;
+    font-family: gothambook;
+    line-height: 15px;
+    font-weight: 600;
+    color: #747474;
+    margin-bottom: 0;
+    margin: 5px 0;
+
+}
+
+.products-all .card h5{
+    margin-bottom: 0;
+    font-size: 13px;
+    font-family: trajanproregular;
+    color: #000;
+    line-height: 17px;
+    font-weight: 600;
+    /* margin-top: 5px; */
+}
+
+.card{
+    cursor: pointer;
+    border: none;
+    border: 1px solid transparent;
+}
+
+/* .card:hover{
+    border: 1px solid #ba9d4d;
+} */
+.card:hover img.card-img-top{
+    filter: blur(1px);
+}
+img.card-img-top {
+    border: 1px solid #ba9d4d;
+}
+.accordion-button:not(.collapsed){
+    background-color: white;
+    box-shadow: none;
+    color: #ba9d4d;
+}
+
+.card{
+    position: relative;
+}
+.view-buy-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.view-buy-hover button{
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid #ba9d4d;
+    padding: 0 10px;
+}
+
+.card:hover .view-buy-hover{
+    display: flex;
+}
+
+.view-buy-hover button:hover{
+    background: #C8B171;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px){
+    .blockWidth:nth-child(1)::after{
+        display: none;
+    }
+    .blockWidth:nth-child(1){
+        margin-bottom: 30px;
+    }
+    .combo-name{
+        min-height: 20px;
+        line-height: normal;
+        white-space: nowrap;
+        font-size: 12px;
+    }
 }
