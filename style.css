@@ -382,7 +382,7 @@ body a:hover {
     position: relative;
     float: left;
     margin: 5px;
-    width: 60px;
+    width: 35px;
     height: 70px;
     font-size: 50px;
     font-weight: 700;
@@ -861,6 +861,9 @@ body a:hover {
     line-height: normal;
 }
 
+.blockWidth{
+    position: relative;
+}
 .blockWidth:nth-child(1)::after {
     position: absolute;
     content: "";
