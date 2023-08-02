@@ -45,14 +45,12 @@
                                     </div>
                                 </div>
                                 <div class="top-right row">
-                                    <div class="col d-flex align-items-center">
-                                        <div class="login-reg d-flex align-content-center gap-1">
+                                    <div class="col d-flex align-items-center ">
+                                        <div class="login-reg d-flex align-content-center align-items-center gap-1">
                                             <i class="fa-solid fa-user pr-2"></i>
-                                            <a href="#">
-                                                <span class="p-1">LOGIN</span>
-                                            </a>
+                                            <span class="p-1 login-btn" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</span>
                                             <span style="color: white; ">/</span>
-                                            <a href="#">
+                                            <a href="./register.html">
                                                 <span class="p-1">REGISTER</span>
                                             </a>
                                         </div>
@@ -118,7 +116,7 @@
                                     </div>
                                 </li>
                                 <li class="hover-able2">
-                                    <a href="brands.html">
+                                    <a href="./brands.html">
                                         <span>BRANDS</span> <i class="fa-solid fa-sort-down"></i>
                                     </a>
                                     <div class="hover-brands p-2">
@@ -235,6 +233,33 @@
         </section>
     </main>
     <!-- main ends -->
+    <!-- login modal -->
+    <div class="modal login" tabindex="-1" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"  style="border: none;">
+                <h5 class="modal-title m-auto">LOGIN HERE</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-around mb-4">
+                        <div class="col login-opt"><a href="">Login with Facebook</a></div>
+                        <div class="col text-center"><span>OR</span></div>
+                        <div class="col login-opt lo2"><a href="">Login with Google</a></div>
+                    </div>
+                    <form >
+                        <input type="email" class="form-control mb-3" placeholder="Email ID">
+                        <input type="password" class="form-control mb-3" placeholder="Password">
+                        <div class="row justify-content-between mb-3">
+                            <div class="col"><a href="">Forget Password?</a></div>
+                            <div class="col text-end"><a href="">Sign up</a></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary d-flex justify-content-center" style="margin: 0 auto;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- footer start here -->
     <footer class="py-5 py-md-0">
         <div class="container p-md-5 p-sm-2 ">

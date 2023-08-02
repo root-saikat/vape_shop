@@ -93,9 +93,17 @@ body a:hover {
 }
 
 /* header */
-.top-left a, .top-right a, .top-right span{
+.top-left a, .top-right a, .top-right span, .login-btn{
     white-space: nowrap;
     font-size: 13px;
+}
+
+.login-btn{
+    color: white;
+    cursor: pointer;
+}
+.login-btn:hover{
+    color: #ba9d4d;
 }
 
 .header-nav-links li{
@@ -1194,14 +1202,53 @@ input[type=number] {
 
 
 
+/* modal css */
+.modal-content{
+    position: relative;
+}
+
+.modal .btn-close{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+.login-opt a{
+    white-space: nowrap;
+    background: #3B5998;
+    color: white;
+    padding: 5px 20px;
+}
+
+.lo2 a{
+    background: #D34836;
+}
+
+.modal form a{
+    color: #ba9d4d;
+}
+.modal form a:hover{
+    text-decoration: underline;
+}
 
 
+/* register page */
 
+.with-g{
+    background: #D34836;
+}
 
+.with-f{
+    background: #3B5998;
+}
 
-
-
-
+.with-g a, .with-f a{
+    color: white;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
