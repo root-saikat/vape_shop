@@ -1337,6 +1337,50 @@ input[type=number] {
     color: #ba9d4d;
 }
 
+.bg-dark{
+    color: white;
+}
+
+.cart-popup h3{
+    font-size: 13px;
+}
+.bg-primary-color{
+    background: #ba9d4d;
+    position: relative;
+}
+
+.bg-primary-color .fa-xmark{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.cart-popup{
+    border: 2px solid white;
+    width: fit-content;
+}
+
+.cart-popup .row {
+    --bs-gutter-x: 0rem;
+}
+
+.price{
+    margin-left: auto;
+}
+.cart-sect{
+    position: relative;
+}
+.cart-popup{
+    z-index: 6666;
+    position: absolute;
+    top: 30px;
+    left: -160px;
+    display: flex;
+    display: none;
+}
+
+
 
 
 

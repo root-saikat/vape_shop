@@ -24,3 +24,17 @@ $(document).ready(function(){
     });
 });
 
+
+const xcart = document.getElementById('x-mark');
+const cartPopup = document.getElementById('cart-popup');
+const showCart = document.getElementById('cart');
+
+console.log(xcart,cartPopup,showCart)
+
+showCart.addEventListener('click', () =>{
+    cartPopup.style.display = "flex"
+})
+xcart.addEventListener('click', () =>{
+    cartPopup.style.display = "none"
+})
+
