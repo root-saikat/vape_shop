@@ -1413,7 +1413,7 @@ input[type=number] {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    display: none;
 }
 
 .mobile-side-menu li{
@@ -1433,11 +1433,15 @@ input[type=number] {
 
 .mobile-side-menu .container .mbm-xmark{
     position: absolute;
-    top: -250px;
+    top: -150px;
     right: 50px;
+    font-size: 25px;
+    cursor: pointer;
     color: black;
 }
-
+#mb-open{
+    cursor: pointer;
+}
 
 
 @media only screen and (max-width: 1082px){

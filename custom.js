@@ -45,3 +45,17 @@ contShop.addEventListener('click', () =>{
 })
 
 // cart popup ends
+
+
+const mbOpen = document.getElementById('mb-open');
+const mbclose = document.getElementById('mbm-x');
+const mbMenu = document.getElementById('mb-mnu');
+
+mbOpen.addEventListener('click', () =>{
+    mbMenu.style.display = "flex"
+})
+
+mbclose.addEventListener('click', () =>{
+    mbMenu.style.display = "none"
+})
+
