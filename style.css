@@ -1380,9 +1380,17 @@ input[type=number] {
     display: none;
 }
 
+/* cart page */
+.cart-page a{
+    background: #ba9d4d;
+    color: white;
+    padding: 8px 20px;
+}
 
-
-
+.cart-page a:hover{
+    background: green;
+    color: white;
+}
 
 
 
