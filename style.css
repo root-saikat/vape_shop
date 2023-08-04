@@ -1281,7 +1281,6 @@ input[type=number] {
 .s-p-container{
     display: grid;
     grid-template-rows: 65% 30%;
-    gap: 5%;
 }
 .p-slider .slick-list.draggable, .p-slider .slick-track{
     height: 100%;
@@ -1292,6 +1291,7 @@ input[type=number] {
 }
 .slider-section-p{
     position: relative;
+    /* height: 65%; */
 }
 
 .p-slider .slick-prev, .p-slider .slick-next{
@@ -1379,6 +1379,20 @@ input[type=number] {
     display: flex;
     display: none;
 }
+
+.carousel-item img{
+    height: 400px;
+    object-fit: contain;
+}
+
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    color: #ba9d4d;
+    background-color: #ba9d4d;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
 
 /* cart page */
 .cart-page a{
@@ -1486,6 +1500,9 @@ input[type=number] {
     .cart-page a{
         padding: 8px;
     }
+    .s-p-container{
+        height: 100%;
+    }
 }
 
 @media only screen and (max-width: 700px){
@@ -1524,5 +1541,8 @@ input[type=number] {
     .cart-page a {
         padding: 8px;
         height: fit-content;
+    }
+    .login-opt a{
+        padding: 5px 10px;
     }
 }
