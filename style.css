@@ -1544,5 +1544,9 @@ input[type=number] {
     }
     .login-opt a{
         padding: 5px 10px;
+        font-size: 14px;
+    }
+    .cart-page a{
+        font-size: 14px;
     }
 }
